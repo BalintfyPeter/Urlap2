@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+
+<body>
+    <table>
+        <td>Név<span>*</span></td>
+        <td>Telefonszám<span>*</span></td>
+        <td></td>
+    </table>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <select name="number" id="number">
+                        <option value="36">36</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select>
+                    <input type="text">
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td placeholder="4032">Irányítószám <span>*</span></td>
+                    <td rowspan="2">Város<span>*</span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="4032"></td>
+                    <td rowspan="2">
+                        <select name="city" id="city">
+                            <option placeholder="Debrecen" value="Budapest">Budapest</option>
+                            <option value="Debrecen">Debrecen</option>
+                            <option value="Győr">Győr</option>
+                            <option value="Miskolc">Miskolc</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ország<span>*</span></td>
+                    <td>Cím<span>*</span></td>
+                </tr>
+                <tr>
+                    <td><select name="country" id="country">
+                            <option value="Magyarország">Magyarország</option>
+                            <option value="Románia">Románia</option>
+                            <option value="Szlovákia">Szlovákia</option>
+                        </select>
+                    </td>
+                    <td rowspan="2">
+                        <input type="text">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td rowspan="3">
+                        <button>Mentés</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>
